@@ -1,0 +1,2285 @@
+[
+    {
+        "id": "300f3dcabaae5254",
+        "type": "tab",
+        "label": "Leads Collection",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9ea0e1cd1624148d",
+        "type": "inject",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 120,
+        "wires": [
+            [
+                "0b8cc7c7000f5045"
+            ]
+        ]
+    },
+    {
+        "id": "0b8cc7c7000f5045",
+        "type": "smeFormSetup",
+        "z": "300f3dcabaae5254",
+        "connector": "f9adc5c8242ed986",
+        "name": "",
+        "saveLocation": "savedForm",
+        "saveLocationType": "flow",
+        "submitEnabled": "1",
+        "retainStatus": "0",
+        "submitText": "Submit",
+        "submitTextType": "str",
+        "recipientId": "",
+        "recipientIdType": "str",
+        "groupChatId": "",
+        "groupChatIdType": "str",
+        "channelId": "9bbd111e-fb11-476d-9ac4-90dc76cf4281",
+        "channelIdType": "str",
+        "receiverType": "channel",
+        "refName": "leadsCapture",
+        "refNameType": "str",
+        "x": 410,
+        "y": 120,
+        "wires": [
+            [
+                "45b6edb61164147a"
+            ]
+        ]
+    },
+    {
+        "id": "f57c22451f35936c",
+        "type": "smeFormComponent",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "reference": "name",
+        "referenceType": "str",
+        "component": "textbox",
+        "title": "Name *",
+        "titleType": "str",
+        "required": "true",
+        "requiredType": "bool",
+        "text": "",
+        "textType": "str",
+        "verticalList": "true",
+        "verticalListType": "bool",
+        "buttons": [],
+        "choices": [],
+        "choiceSelectionMode": "list",
+        "switchValue": "false",
+        "switchValueType": "bool",
+        "sliderMin": 0,
+        "sliderMinType": "num",
+        "sliderMax": 10,
+        "sliderMaxType": "num",
+        "sliderStep": 0,
+        "sliderStepType": "num",
+        "sliderValue": 0,
+        "sliderValueType": "num",
+        "actionButtonTitle": "Select",
+        "actionButtonTitleType": "str",
+        "multiSelection": "false",
+        "multiSelectionType": "bool",
+        "bucketFilter": "all",
+        "x": 660,
+        "y": 160,
+        "wires": [
+            [
+                "9d2bac5f706058a9"
+            ]
+        ]
+    },
+    {
+        "id": "9d2bac5f706058a9",
+        "type": "smeFormComponent",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "reference": "surname",
+        "referenceType": "str",
+        "component": "textbox",
+        "title": "Surname *",
+        "titleType": "str",
+        "required": "true",
+        "requiredType": "bool",
+        "text": "",
+        "textType": "str",
+        "verticalList": "true",
+        "verticalListType": "bool",
+        "buttons": [],
+        "choices": [],
+        "choiceSelectionMode": "list",
+        "switchValue": "false",
+        "switchValueType": "bool",
+        "sliderMin": 0,
+        "sliderMinType": "num",
+        "sliderMax": 10,
+        "sliderMaxType": "num",
+        "sliderStep": 0,
+        "sliderStepType": "num",
+        "sliderValue": 0,
+        "sliderValueType": "num",
+        "actionButtonTitle": "Select",
+        "actionButtonTitleType": "str",
+        "multiSelection": "false",
+        "multiSelectionType": "bool",
+        "bucketFilter": "all",
+        "x": 670,
+        "y": 200,
+        "wires": [
+            [
+                "8b2d341a277bd6ec"
+            ]
+        ]
+    },
+    {
+        "id": "8b2d341a277bd6ec",
+        "type": "smeFormComponent",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "reference": "company",
+        "referenceType": "str",
+        "component": "textbox",
+        "title": "Company *",
+        "titleType": "str",
+        "required": "true",
+        "requiredType": "bool",
+        "text": "",
+        "textType": "str",
+        "verticalList": "true",
+        "verticalListType": "bool",
+        "buttons": [],
+        "choices": [],
+        "choiceSelectionMode": "list",
+        "switchValue": "false",
+        "switchValueType": "bool",
+        "sliderMin": 0,
+        "sliderMinType": "num",
+        "sliderMax": 10,
+        "sliderMaxType": "num",
+        "sliderStep": 0,
+        "sliderStepType": "num",
+        "sliderValue": 0,
+        "sliderValueType": "num",
+        "actionButtonTitle": "Select",
+        "actionButtonTitleType": "str",
+        "multiSelection": "false",
+        "multiSelectionType": "bool",
+        "bucketFilter": "all",
+        "x": 670,
+        "y": 240,
+        "wires": [
+            [
+                "b28edb6c62edf55f"
+            ]
+        ]
+    },
+    {
+        "id": "b28edb6c62edf55f",
+        "type": "smeFormComponent",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "reference": "site_role",
+        "referenceType": "str",
+        "component": "textbox",
+        "title": "Site/Role",
+        "titleType": "str",
+        "required": "false",
+        "requiredType": "bool",
+        "text": "",
+        "textType": "str",
+        "verticalList": "true",
+        "verticalListType": "bool",
+        "buttons": [],
+        "choices": [],
+        "choiceSelectionMode": "list",
+        "switchValue": "false",
+        "switchValueType": "bool",
+        "sliderMin": 0,
+        "sliderMinType": "num",
+        "sliderMax": 10,
+        "sliderMaxType": "num",
+        "sliderStep": 0,
+        "sliderStepType": "num",
+        "sliderValue": 0,
+        "sliderValueType": "num",
+        "actionButtonTitle": "Select",
+        "actionButtonTitleType": "str",
+        "multiSelection": "false",
+        "multiSelectionType": "bool",
+        "bucketFilter": "all",
+        "x": 670,
+        "y": 280,
+        "wires": [
+            [
+                "217b1db1b7e63b30"
+            ]
+        ]
+    },
+    {
+        "id": "217b1db1b7e63b30",
+        "type": "smeFormComponent",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "reference": "email",
+        "referenceType": "str",
+        "component": "textbox",
+        "title": "E-Mail *",
+        "titleType": "str",
+        "required": "true",
+        "requiredType": "bool",
+        "text": "",
+        "textType": "str",
+        "verticalList": "true",
+        "verticalListType": "bool",
+        "buttons": [],
+        "choices": [],
+        "choiceSelectionMode": "list",
+        "switchValue": "false",
+        "switchValueType": "bool",
+        "sliderMin": 0,
+        "sliderMinType": "num",
+        "sliderMax": 10,
+        "sliderMaxType": "num",
+        "sliderStep": 0,
+        "sliderStepType": "num",
+        "sliderValue": 0,
+        "sliderValueType": "num",
+        "actionButtonTitle": "Select",
+        "actionButtonTitleType": "str",
+        "multiSelection": "false",
+        "multiSelectionType": "bool",
+        "bucketFilter": "all",
+        "x": 680,
+        "y": 320,
+        "wires": [
+            [
+                "888f79281d4f3b88"
+            ]
+        ]
+    },
+    {
+        "id": "888f79281d4f3b88",
+        "type": "smeFormComponent",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "reference": "phone",
+        "referenceType": "str",
+        "component": "textbox",
+        "title": "Phone",
+        "titleType": "str",
+        "required": "false",
+        "requiredType": "bool",
+        "text": "",
+        "textType": "str",
+        "verticalList": "true",
+        "verticalListType": "bool",
+        "buttons": [],
+        "choices": [],
+        "choiceSelectionMode": "list",
+        "switchValue": "false",
+        "switchValueType": "bool",
+        "sliderMin": 0,
+        "sliderMinType": "num",
+        "sliderMax": 10,
+        "sliderMaxType": "num",
+        "sliderStep": 0,
+        "sliderStepType": "num",
+        "sliderValue": 0,
+        "sliderValueType": "num",
+        "actionButtonTitle": "Select",
+        "actionButtonTitleType": "str",
+        "multiSelection": "false",
+        "multiSelectionType": "bool",
+        "bucketFilter": "all",
+        "x": 680,
+        "y": 360,
+        "wires": [
+            [
+                "bf94f5b786fa7eaf"
+            ]
+        ]
+    },
+    {
+        "id": "45b6edb61164147a",
+        "type": "smeFormComponent",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "reference": "title",
+        "referenceType": "str",
+        "component": "label",
+        "title": "Leads Capture Demo",
+        "titleType": "str",
+        "required": "false",
+        "requiredType": "bool",
+        "text": "",
+        "textType": "str",
+        "verticalList": "true",
+        "verticalListType": "bool",
+        "buttons": [],
+        "choices": [],
+        "choiceSelectionMode": "list",
+        "switchValue": "false",
+        "switchValueType": "bool",
+        "sliderMin": 0,
+        "sliderMinType": "num",
+        "sliderMax": 10,
+        "sliderMaxType": "num",
+        "sliderStep": 0,
+        "sliderStepType": "num",
+        "sliderValue": 0,
+        "sliderValueType": "num",
+        "actionButtonTitle": "Select",
+        "actionButtonTitleType": "str",
+        "multiSelection": "false",
+        "multiSelectionType": "bool",
+        "bucketFilter": "all",
+        "x": 640,
+        "y": 120,
+        "wires": [
+            [
+                "f57c22451f35936c"
+            ]
+        ]
+    },
+    {
+        "id": "bf94f5b786fa7eaf",
+        "type": "smeFormComponent",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "reference": "technicalReference",
+        "referenceType": "str",
+        "component": "textbox",
+        "title": "Technical reference",
+        "titleType": "str",
+        "required": "false",
+        "requiredType": "bool",
+        "text": "",
+        "textType": "str",
+        "verticalList": "true",
+        "verticalListType": "bool",
+        "buttons": [],
+        "choices": [],
+        "choiceSelectionMode": "list",
+        "switchValue": "false",
+        "switchValueType": "bool",
+        "sliderMin": 0,
+        "sliderMinType": "num",
+        "sliderMax": 10,
+        "sliderMaxType": "num",
+        "sliderStep": 0,
+        "sliderStepType": "num",
+        "sliderValue": 0,
+        "sliderValueType": "num",
+        "actionButtonTitle": "Select",
+        "actionButtonTitleType": "str",
+        "multiSelection": "false",
+        "multiSelectionType": "bool",
+        "bucketFilter": "all",
+        "x": 960,
+        "y": 120,
+        "wires": [
+            [
+                "3af0bac24c5dfa80"
+            ]
+        ]
+    },
+    {
+        "id": "3af0bac24c5dfa80",
+        "type": "smeFormComponent",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "reference": "interestedIn",
+        "referenceType": "str",
+        "component": "multichoice",
+        "title": "Interested in *",
+        "titleType": "str",
+        "required": "true",
+        "requiredType": "bool",
+        "text": "",
+        "textType": "str",
+        "verticalList": "true",
+        "verticalListType": "bool",
+        "buttons": [],
+        "choices": [
+            {
+                "name": "Item 1",
+                "value": "Item 1"
+            },
+            {
+                "name": "Item 2",
+                "value": "Item 2"
+            },
+            {
+                "name": "Item 3",
+                "value": "Item 3"
+            },
+            {
+                "name": "Item 4",
+                "value": "Item 4"
+            },
+            {
+                "name": "Item 5",
+                "value": "Item 5"
+            },
+            {
+                "name": "Item 6",
+                "value": "Item 6"
+            },
+            {
+                "name": "Item 7",
+                "value": "Item 7"
+            },
+            {
+                "name": "Item 8",
+                "value": "Item 8"
+            },
+            {
+                "name": "Other",
+                "value": "Other"
+            }
+        ],
+        "choiceSelectionMode": "list",
+        "switchValue": "false",
+        "switchValueType": "bool",
+        "sliderMin": 0,
+        "sliderMinType": "num",
+        "sliderMax": 10,
+        "sliderMaxType": "num",
+        "sliderStep": 0,
+        "sliderStepType": "num",
+        "sliderValue": 0,
+        "sliderValueType": "num",
+        "actionButtonTitle": "Select",
+        "actionButtonTitleType": "str",
+        "multiSelection": "false",
+        "multiSelectionType": "bool",
+        "bucketFilter": "all",
+        "x": 950,
+        "y": 160,
+        "wires": [
+            [
+                "2881ee93a5b323b7"
+            ]
+        ]
+    },
+    {
+        "id": "2881ee93a5b323b7",
+        "type": "smeFormComponent",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "reference": "interestedInOther",
+        "referenceType": "str",
+        "component": "textbox",
+        "title": "Other Interest",
+        "titleType": "str",
+        "required": "false",
+        "requiredType": "bool",
+        "text": "",
+        "textType": "str",
+        "verticalList": "true",
+        "verticalListType": "bool",
+        "buttons": [],
+        "choices": [],
+        "choiceSelectionMode": "list",
+        "switchValue": "false",
+        "switchValueType": "bool",
+        "sliderMin": 0,
+        "sliderMinType": "num",
+        "sliderMax": 10,
+        "sliderMaxType": "num",
+        "sliderStep": 0,
+        "sliderStepType": "num",
+        "sliderValue": 0,
+        "sliderValueType": "num",
+        "actionButtonTitle": "Select",
+        "actionButtonTitleType": "str",
+        "multiSelection": "false",
+        "multiSelectionType": "bool",
+        "bucketFilter": "all",
+        "x": 950,
+        "y": 200,
+        "wires": [
+            [
+                "35040977e95e39a2"
+            ]
+        ]
+    },
+    {
+        "id": "35040977e95e39a2",
+        "type": "smeFormComponent",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "reference": "leadType",
+        "referenceType": "str",
+        "component": "multichoice",
+        "title": "Lead Type *",
+        "titleType": "str",
+        "required": "true",
+        "requiredType": "bool",
+        "text": "",
+        "textType": "str",
+        "verticalList": "true",
+        "verticalListType": "bool",
+        "buttons": [],
+        "choices": [
+            {
+                "name": "Customer",
+                "value": "Customer"
+            },
+            {
+                "name": "Supplier",
+                "value": "Supplier"
+            },
+            {
+                "name": "HR",
+                "value": "HR"
+            },
+            {
+                "name": "University",
+                "value": "University"
+            },
+            {
+                "name": "Other",
+                "value": "Other"
+            }
+        ],
+        "choiceSelectionMode": "list",
+        "switchValue": "false",
+        "switchValueType": "bool",
+        "sliderMin": 0,
+        "sliderMinType": "num",
+        "sliderMax": 10,
+        "sliderMaxType": "num",
+        "sliderStep": 0,
+        "sliderStepType": "num",
+        "sliderValue": 0,
+        "sliderValueType": "num",
+        "actionButtonTitle": "Select",
+        "actionButtonTitleType": "str",
+        "multiSelection": "false",
+        "multiSelectionType": "bool",
+        "bucketFilter": "all",
+        "x": 940,
+        "y": 240,
+        "wires": [
+            [
+                "c2114f6764987257"
+            ]
+        ]
+    },
+    {
+        "id": "c2114f6764987257",
+        "type": "smeFormComponent",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "reference": "leadTypeOther",
+        "referenceType": "str",
+        "component": "textbox",
+        "title": "Other Lead Type",
+        "titleType": "str",
+        "required": "false",
+        "requiredType": "bool",
+        "text": "",
+        "textType": "str",
+        "verticalList": "true",
+        "verticalListType": "bool",
+        "buttons": [],
+        "choices": [],
+        "choiceSelectionMode": "list",
+        "switchValue": "false",
+        "switchValueType": "bool",
+        "sliderMin": 0,
+        "sliderMinType": "num",
+        "sliderMax": 10,
+        "sliderMaxType": "num",
+        "sliderStep": 0,
+        "sliderStepType": "num",
+        "sliderValue": 0,
+        "sliderValueType": "num",
+        "actionButtonTitle": "Select",
+        "actionButtonTitleType": "str",
+        "multiSelection": "false",
+        "multiSelectionType": "bool",
+        "bucketFilter": "all",
+        "x": 950,
+        "y": 280,
+        "wires": [
+            [
+                "98ad55434097d5d3"
+            ]
+        ]
+    },
+    {
+        "id": "98ad55434097d5d3",
+        "type": "smeFormComponent",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "reference": "businessCard",
+        "referenceType": "str",
+        "component": "photopicker",
+        "title": "Business Card",
+        "titleType": "str",
+        "required": "false",
+        "requiredType": "bool",
+        "text": "",
+        "textType": "str",
+        "verticalList": "true",
+        "verticalListType": "bool",
+        "buttons": [],
+        "choices": [],
+        "choiceSelectionMode": "list",
+        "switchValue": "false",
+        "switchValueType": "bool",
+        "sliderMin": 0,
+        "sliderMinType": "num",
+        "sliderMax": 10,
+        "sliderMaxType": "num",
+        "sliderStep": 0,
+        "sliderStepType": "num",
+        "sliderValue": 0,
+        "sliderValueType": "num",
+        "actionButtonTitle": "Select",
+        "actionButtonTitleType": "str",
+        "multiSelection": "false",
+        "multiSelectionType": "bool",
+        "bucketFilter": "all",
+        "x": 960,
+        "y": 320,
+        "wires": [
+            [
+                "956fadae945c6aef"
+            ]
+        ]
+    },
+    {
+        "id": "956fadae945c6aef",
+        "type": "smeFormComponent",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "reference": "photo",
+        "referenceType": "str",
+        "component": "photopicker",
+        "title": "Photo",
+        "titleType": "str",
+        "required": "false",
+        "requiredType": "bool",
+        "text": "",
+        "textType": "str",
+        "verticalList": "true",
+        "verticalListType": "bool",
+        "buttons": [],
+        "choices": [],
+        "choiceSelectionMode": "list",
+        "switchValue": "false",
+        "switchValueType": "bool",
+        "sliderMin": 0,
+        "sliderMinType": "num",
+        "sliderMax": 10,
+        "sliderMaxType": "num",
+        "sliderStep": 0,
+        "sliderStepType": "num",
+        "sliderValue": 0,
+        "sliderValueType": "num",
+        "actionButtonTitle": "Select",
+        "actionButtonTitleType": "str",
+        "multiSelection": "false",
+        "multiSelectionType": "bool",
+        "bucketFilter": "all",
+        "x": 930,
+        "y": 360,
+        "wires": [
+            [
+                "17f2a471caec1de8"
+            ]
+        ]
+    },
+    {
+        "id": "17f2a471caec1de8",
+        "type": "smeFormComponent",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "reference": "shortDescription",
+        "referenceType": "str",
+        "component": "textbox",
+        "title": "Short Description *",
+        "titleType": "str",
+        "required": "true",
+        "requiredType": "bool",
+        "text": "",
+        "textType": "str",
+        "verticalList": "true",
+        "verticalListType": "bool",
+        "buttons": [],
+        "choices": [],
+        "choiceSelectionMode": "list",
+        "switchValue": "false",
+        "switchValueType": "bool",
+        "sliderMin": 0,
+        "sliderMinType": "num",
+        "sliderMax": 10,
+        "sliderMaxType": "num",
+        "sliderStep": 0,
+        "sliderStepType": "num",
+        "sliderValue": 0,
+        "sliderValueType": "num",
+        "actionButtonTitle": "Select",
+        "actionButtonTitleType": "str",
+        "multiSelection": "false",
+        "multiSelectionType": "bool",
+        "bucketFilter": "all",
+        "x": 950,
+        "y": 400,
+        "wires": [
+            [
+                "ab73de6f58e2033f"
+            ]
+        ]
+    },
+    {
+        "id": "ab73de6f58e2033f",
+        "type": "smeFormComponent",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "reference": "nextStep",
+        "referenceType": "str",
+        "component": "multichoice",
+        "title": "Next step",
+        "titleType": "str",
+        "required": "false",
+        "requiredType": "bool",
+        "text": "",
+        "textType": "str",
+        "verticalList": "true",
+        "verticalListType": "bool",
+        "buttons": [],
+        "choices": [
+            {
+                "name": "Follow-up email",
+                "value": "Follow-up email"
+            },
+            {
+                "name": "Recall",
+                "value": "Recall"
+            },
+            {
+                "name": "Web Meeting",
+                "value": "Web Meeting"
+            },
+            {
+                "name": "Visit @ CustoM 2.0",
+                "value": "Visit @ CustoM 2.0"
+            },
+            {
+                "name": "Visit @ Customer site",
+                "value": "Visit @ Customer site"
+            }
+        ],
+        "choiceSelectionMode": "list",
+        "switchValue": "false",
+        "switchValueType": "bool",
+        "sliderMin": 0,
+        "sliderMinType": "num",
+        "sliderMax": 10,
+        "sliderMaxType": "num",
+        "sliderStep": 0,
+        "sliderStepType": "num",
+        "sliderValue": 0,
+        "sliderValueType": "num",
+        "actionButtonTitle": "Select",
+        "actionButtonTitleType": "str",
+        "multiSelection": "false",
+        "multiSelectionType": "bool",
+        "bucketFilter": "all",
+        "x": 940,
+        "y": 440,
+        "wires": [
+            [
+                "16c0c24583fe699c"
+            ]
+        ]
+    },
+    {
+        "id": "16c0c24583fe699c",
+        "type": "smeMessage",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "message": "form",
+        "text": "This is a text message.",
+        "textType": "str",
+        "html": "<b>This is an html message</b>",
+        "htmlType": "str",
+        "fileIds": "",
+        "fileIdsType": "str",
+        "contactIds": "",
+        "contactIdsType": "str",
+        "locationName": "myLocation",
+        "locationNameType": "str",
+        "latitude": "",
+        "latitudeType": "str",
+        "longitude": "",
+        "longitudeType": "str",
+        "url": "",
+        "urlType": "str",
+        "enableFullScreenView": "1",
+        "viewSize": "1:2",
+        "channelId": "",
+        "channelIdType": "str",
+        "tunnelId": "",
+        "tunnelIdType": "str",
+        "formLocation": "#:(file)::savedForm",
+        "formLocationType": "flow",
+        "x": 1270,
+        "y": 160,
+        "wires": [
+            [
+                "fbb9db512f38c619"
+            ]
+        ]
+    },
+    {
+        "id": "345fc7ee1f3418f0",
+        "type": "smeSender",
+        "z": "300f3dcabaae5254",
+        "connector": "f9adc5c8242ed986",
+        "async": "0",
+        "name": "",
+        "actionName": "channel_message_send",
+        "actionText": "Channel - Send Message",
+        "recipientId": "",
+        "recipientIdType": "str",
+        "messageId": "",
+        "messageIdType": "str",
+        "limit": 0,
+        "limitType": "num",
+        "recipientIds": "",
+        "recipientIdsType": "str",
+        "groupChatId": "",
+        "groupChatIdType": "str",
+        "channelId": "330cf3c8-46f5-41e8-b817-c3b1840113ef",
+        "channelIdType": "str",
+        "title": "",
+        "titleType": "str",
+        "saveLocation": "savedMessageId",
+        "saveLocationType": "flow",
+        "saveRequestIdLocation": "savedRequestId",
+        "saveRequestIdLocationType": "flow",
+        "logToConsole": true,
+        "x": 1570,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fbb9db512f38c619",
+        "type": "switch",
+        "z": "300f3dcabaae5254",
+        "name": "New?",
+        "property": "#:(file)::savedMessageId",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "null"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1410,
+        "y": 160,
+        "wires": [
+            [
+                "345fc7ee1f3418f0"
+            ],
+            [
+                "5e5ec35889ce8f0d"
+            ]
+        ]
+    },
+    {
+        "id": "5e5ec35889ce8f0d",
+        "type": "smeSender",
+        "z": "300f3dcabaae5254",
+        "connector": "f9adc5c8242ed986",
+        "async": "0",
+        "name": "",
+        "actionName": "channel_message_update",
+        "actionText": "Channel - Update Message",
+        "recipientId": "",
+        "recipientIdType": "str",
+        "messageId": "savedMessageId",
+        "messageIdType": "flow",
+        "limit": 0,
+        "limitType": "num",
+        "recipientIds": "",
+        "recipientIdsType": "str",
+        "groupChatId": "",
+        "groupChatIdType": "str",
+        "channelId": "",
+        "channelIdType": "str",
+        "title": "",
+        "titleType": "str",
+        "saveLocation": "savedEntityId",
+        "saveLocationType": "flow",
+        "saveRequestIdLocation": "savedRequestId",
+        "saveRequestIdLocationType": "flow",
+        "logToConsole": true,
+        "x": 1580,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b30e82f14f1580b2",
+        "type": "smeListener",
+        "z": "300f3dcabaae5254",
+        "connector": "f9adc5c8242ed986",
+        "x": 170,
+        "y": 580,
+        "wires": [
+            [
+                "b674d50b2792a25e"
+            ]
+        ]
+    },
+    {
+        "id": "b674d50b2792a25e",
+        "type": "smeFilter",
+        "z": "300f3dcabaae5254",
+        "connector": "f9adc5c8242ed986",
+        "name": "",
+        "filter": "submission",
+        "reference": "leadsCapture",
+        "referenceType": "str",
+        "messageId": "savedMessageId",
+        "messageIdType": "flow",
+        "extractValues": true,
+        "chat": "p2p",
+        "senderId": "",
+        "senderIdType": "str",
+        "groupChatId": "",
+        "groupChatIdType": "str",
+        "channelId": "",
+        "channelIdType": "str",
+        "requestId": "savedRequestId",
+        "requestIdType": "flow",
+        "saveLocation": "filteredEvent",
+        "saveLocationType": "msg",
+        "x": 420,
+        "y": 520,
+        "wires": [
+            [
+                "a527931379a42c73",
+                "87f41037314d50e1"
+            ]
+        ]
+    },
+    {
+        "id": "d57746a85ace0cc7",
+        "type": "function",
+        "z": "300f3dcabaae5254",
+        "name": "Create Row",
+        "func": "/* Global settings */\nlet gPath = '/data/localfiles/leads/media/';\n/* Preparing pictures ID */\nmsg.temp = {};\nlet bId = msg.temp.businessCardId = [];\nlet bPath = msg.temp.businessCardPath = [];\nlet pId = msg.temp.photoId = [];\nlet pPath = msg.temp.photoPath = [];\n\n/* Initializing final vars for csv row */\nmsg.temp.businessCardFinalRow = [];\nmsg.temp.photoFinalRow = [];\n\n\nif (msg.businessCard) {\n    msg.businessCard.forEach(function(bcElem) {\n        bId.push(bcElem.FileID)\n        bPath.push(gPath + bcElem.FileID);\n    });\n}\n\nif (msg.photo) {\n    msg.photo.forEach(function(pElem) {\n        pId.push(pElem.FileID)\n        pPath.push(gPath + pElem.FileID);\n    });\n}\n\n\nvar compilerId = \n    msg._sme && \n    msg._sme.receivedMsg &&\n    msg._sme.receivedMsg.eventBody &&\n    msg._sme.receivedMsg.eventBody.senderId;\n\nmsg.columns = \n    \"name,\\\n    surname,\\\n    company,\\\n    site_role,\\\n    email,\\\n    phone,\\\n    technicalReference,\\\n    interestedIn,\\\n    interestedInOther,\\\n    leadType,\\\n    leadTypeOther,\\\n    businessCard,\\\n    photo,\\\n    shortDescription,\\\n    nextStep,\\\n    submitterId,\\\n    submitDate\"\n\nmsg.csvRow = {\n    name: msg.name || \"\",\n    surname: msg.surname || \"\",\n    company: msg.company || \"\",\n    site_role: msg.site_role || \"\",\n    email: msg.email || \"\",\n    phone: msg.phone || \"\",\n    technicalReference: msg.technicalReference || \"\",\n    interestedIn: (msg.interestedIn && msg.interestedIn.toString()) || \"\",\n    interestedInOther: msg.interestedInOther || \"\",\n    leadType: (msg.leadType && msg.leadType.toString()) || \"\",\n    leadTypeOther: msg.leadTypeOther || \"\",\n    businessCard: \"\",\n    photo: \"\",\n    shortDescription: msg.shortDescription || \"\",\n    nextStep: (msg.nextStep && msg.nextStep.toString()) || \"\",\n    submitterId: msg.filteredEvent.submitterId || \"\",\n    submitDate: Date.now() \n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 640,
+        "wires": [
+            [
+                "44e7a34dc3f508f8",
+                "8b01e422117ef5c9"
+            ]
+        ]
+    },
+    {
+        "id": "3b07f33943894f5d",
+        "type": "csv",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": true,
+        "include_null_values": true,
+        "x": 550,
+        "y": 1040,
+        "wires": [
+            [
+                "33f18522a8fa559b"
+            ]
+        ]
+    },
+    {
+        "id": "33f18522a8fa559b",
+        "type": "file",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "filename": "${USERDATA}/leads/myDataCollection.csv",
+        "filenameType": "env",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "utf8",
+        "x": 800,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "46166efbd1b352d2",
+        "type": "change",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "csvRow",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 260,
+        "y": 1040,
+        "wires": [
+            [
+                "3b07f33943894f5d",
+                "faf0318168636369",
+                "fb74a698ef0d0f18"
+            ]
+        ]
+    },
+    {
+        "id": "a527931379a42c73",
+        "type": "debug",
+        "z": "300f3dcabaae5254",
+        "name": "debug 97",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "6dcbeff265d41a44",
+        "type": "comment",
+        "z": "300f3dcabaae5254",
+        "name": "Example Submission",
+        "info": "```json\n{\n    \"payload\": null,\n    \"_sme\": {\n        \"receivedMsg\": {\n            \"featureType\": \"channel\",\n            \"eventType\": \"MessageReceived\",\n            \"eventBody\": {\n                \"messageId\": \"5e560b9f-5fcd-4bc1-9260-08fa3dc2aadf\",\n                \"senderId\": \"bb56f4a9-a241-4408-a71f-7adbc9bb31c1\",\n                \"receivedOn\": 1713531239823,\n                \"channelId\": \"7322309d-2e15-4ba6-9b38-8edc176a955d\",\n                \"dataComponent\": {\n                    \"dataComponentType\": \"formsubmission\",\n                    \"replyTo\": {\n                        \"messageId\": \"a6984199-4000-4878-990a-7d3ece9ff1ea\",\n                        \"refName\": \"etechleads\"\n                    },\n                    \"submitEnabled\": true,\n                    \"retainStatus\": false,\n                    \"submitText\": \"Submit\",\n                    \"receiver\": {\n                        \"id\": \"7322309d-2e15-4ba6-9b38-8edc176a955d\",\n                        \"featureType\": \"channel\"\n                    },\n                    \"formComponents\": [{\n                            \"formComponentType\": \"label\",\n                            \"refName\": \"title\",\n                            \"title\": \"E-TECH 2024 Lead\"\n                        }, {\n                            \"formComponentType\": \"textbox\",\n                            \"text\": \"Text\",\n                            \"refName\": \"name\",\n                            \"title\": \"Name *\",\n                            \"value\": \"jzkkcm\",\n                            \"requiredSelection\": true\n                        }, {\n                            \"formComponentType\": \"textbox\",\n                            \"text\": \"Text\",\n                            \"refName\": \"surname\",\n                            \"title\": \"Surname *\",\n                            \"value\": \"pskxnf\",\n                            \"requiredSelection\": true\n                        }, {\n                            \"formComponentType\": \"textbox\",\n                            \"text\": \"Text\",\n                            \"refName\": \"company\",\n                            \"title\": \"Company *\",\n                            \"value\": \"elepks\",\n                            \"requiredSelection\": true\n                        }, {\n                            \"formComponentType\": \"textbox\",\n                            \"text\": \"Text\",\n                            \"refName\": \"site_role\",\n                            \"title\": \"Site/Role\",\n                            \"value\": \"ekkdkr\",\n                            \"requiredSelection\": false\n                        }, {\n                            \"formComponentType\": \"textbox\",\n                            \"text\": \"Text\",\n                            \"refName\": \"email\",\n                            \"title\": \"E-Mail *\",\n                            \"value\": \"dkekoe\",\n                            \"requiredSelection\": true\n                        }, {\n                            \"formComponentType\": \"textbox\",\n                            \"text\": \"Text\",\n                            \"refName\": \"phone\",\n                            \"title\": \"Phone\",\n                            \"value\": \"ksoekf\",\n                            \"requiredSelection\": false\n                        }, {\n                            \"formComponentType\": \"textbox\",\n                            \"text\": \"Text\",\n                            \"refName\": \"technicalReference\",\n                            \"title\": \"Technical reference\",\n                            \"value\": \"dkirir\",\n                            \"requiredSelection\": false\n                        }, {\n                            \"formComponentType\": \"multichoice\",\n                            \"refName\": \"interestedIn\",\n                            \"title\": \"Interested in *\",\n                            \"value\": [\"Electrofit Systems\", \"e-Comer\", \"I&M\", \"Other\"],\n                            \"requiredSelection\": true,\n                            \"options\": [{\n                                    \"name\": \"CustoM 2.0\",\n                                    \"value\": \"CustoM 2.0\"\n                                }, {\n                                    \"name\": \"Electrofit Systems\",\n                                    \"value\": \"Electrofit Systems\"\n                                }, {\n                                    \"name\": \"e-Comer\",\n                                    \"value\": \"e-Comer\"\n                                }, {\n                                    \"name\": \"I&M\",\n                                    \"value\": \"I&M\"\n                                }, {\n                                    \"name\": \" Solbian\",\n                                    \"value\": \" Solbian\"\n                                }, {\n                                    \"name\": \"CalPower\",\n                                    \"value\": \"CalPower\"\n                                }, {\n                                    \"name\": \"semilimes\",\n                                    \"value\": \"semilimes\"\n                                }, {\n                                    \"name\": \"HBK\",\n                                    \"value\": \"HBK\"\n                                }, {\n                                    \"name\": \"Other\",\n                                    \"value\": \"Other\"\n                                }\n                            ]\n                        }, {\n                            \"formComponentType\": \"textbox\",\n                            \"text\": \"Text\",\n                            \"refName\": \"interestedInOther\",\n                            \"title\": \"Other Interest\",\n                            \"value\": \"dotjj4\",\n                            \"requiredSelection\": false\n                        }, {\n                            \"formComponentType\": \"multichoice\",\n                            \"refName\": \"leadType\",\n                            \"title\": \"Lead Type *\",\n                            \"value\": [\"Customer\", \"University\", \"Other\"],\n                            \"requiredSelection\": true,\n                            \"options\": [{\n                                    \"name\": \"Customer\",\n                                    \"value\": \"Customer\"\n                                }, {\n                                    \"name\": \"Supplier\",\n                                    \"value\": \"Supplier\"\n                                }, {\n                                    \"name\": \"HR\",\n                                    \"value\": \"HR\"\n                                }, {\n                                    \"name\": \"University\",\n                                    \"value\": \"University\"\n                                }, {\n                                    \"name\": \"Other\",\n                                    \"value\": \"Other\"\n                                }\n                            ]\n                        }, {\n                            \"formComponentType\": \"textbox\",\n                            \"text\": \"Text\",\n                            \"refName\": \"leadTypeOther\",\n                            \"title\": \"Other Lead Type\",\n                            \"value\": \"dnorkc\",\n                            \"requiredSelection\": false\n                        }, {\n                            \"formComponentType\": \"photopicker\",\n                            \"refName\": \"businessCard\",\n                            \"title\": \"Business Card\",\n                            \"value\": [{\n                                    \"FileType\": \"photo\",\n                                    \"FileID\": \"a3ea3f4f-609a-4712-bc0b-08fb7e5a8cd8\",\n                                    \"FileName\": \"1b7c2744-d493-4e39-b841-c8a0ff444dd26200755160536883324.jpg\",\n                                    \"FileSize\": 2387536\n                                }, {\n                                    \"FileType\": \"photo\",\n                                    \"FileID\": \"d9b60c36-c6f1-4ac7-8d8c-936e77bdea56\",\n                                    \"FileName\": \"885c5d86-68ca-4fa8-89b3-76edbf9c39bd7367706435385656747.jpg\",\n                                    \"FileSize\": 2092386\n                                }\n                            ],\n                            \"requiredSelection\": false,\n                            \"actionButtonTitle\": \"Select\",\n                            \"multiSelection\": true\n                        }, {\n                            \"formComponentType\": \"photopicker\",\n                            \"refName\": \"photo\",\n                            \"title\": \"Photo\",\n                            \"value\": [{\n                                    \"FileType\": \"photo\",\n                                    \"FileID\": \"9c621fdd-9a21-4a2d-8a9a-f31a01f9161f\",\n                                    \"FileName\": \"f0021972-8e7b-4a90-98e7-ee3bc72b7515346351298834627125.jpg\",\n                                    \"FileSize\": 4478989\n                                }\n                            ],\n                            \"requiredSelection\": false,\n                            \"actionButtonTitle\": \"Select\",\n                            \"multiSelection\": true\n                        }, {\n                            \"formComponentType\": \"textbox\",\n                            \"text\": \"Text\",\n                            \"refName\": \"shortDescription\",\n                            \"title\": \"Short Description *\",\n                            \"value\": \"vtgyfbuuvfihpgibiughuzugygug,guvugif, vtg6f8hih8h6de3d6gh78hhu\",\n                            \"requiredSelection\": true\n                        }, {\n                            \"formComponentType\": \"multichoice\",\n                            \"refName\": \"nextStep\",\n                            \"title\": \"Next step\",\n                            \"value\": [\"Follow-up email\", \"Visit @ CustoM 2.0\"],\n                            \"requiredSelection\": false,\n                            \"options\": [{\n                                    \"name\": \"Follow-up email\",\n                                    \"value\": \"Follow-up email\"\n                                }, {\n                                    \"name\": \"Recall\",\n                                    \"value\": \"Recall\"\n                                }, {\n                                    \"name\": \"Web Meeting\",\n                                    \"value\": \"Web Meeting\"\n                                }, {\n                                    \"name\": \"Visit @ CustoM 2.0\",\n                                    \"value\": \"Visit @ CustoM 2.0\"\n                                }, {\n                                    \"name\": \"Visit @ Customer site\",\n                                    \"value\": \"Visit @ Customer site\"\n                                }\n                            ]\n                        }\n                    ]\n                }\n            }\n        }\n    },\n    \"_msgid\": \"31a07acb1d99547b\",\n    \"filteredEvent\": {\n        \"senderId\": \"bb56f4a9-a241-4408-a71f-7adbc9bb31c1\",\n        \"replyTo\": {\n            \"messageId\": \"a6984199-4000-4878-990a-7d3ece9ff1ea\",\n            \"refName\": \"etechleads\"\n        },\n        \"formComponents\": [{\n                \"formComponentType\": \"label\",\n                \"refName\": \"title\",\n                \"title\": \"E-TECH 2024 Lead\"\n            }, {\n                \"formComponentType\": \"textbox\",\n                \"text\": \"Text\",\n                \"refName\": \"name\",\n                \"title\": \"Name *\",\n                \"value\": \"jzkkcm\",\n                \"requiredSelection\": true\n            }, {\n                \"formComponentType\": \"textbox\",\n                \"text\": \"Text\",\n                \"refName\": \"surname\",\n                \"title\": \"Surname *\",\n                \"value\": \"pskxnf\",\n                \"requiredSelection\": true\n            }, {\n                \"formComponentType\": \"textbox\",\n                \"text\": \"Text\",\n                \"refName\": \"company\",\n                \"title\": \"Company *\",\n                \"value\": \"elepks\",\n                \"requiredSelection\": true\n            }, {\n                \"formComponentType\": \"textbox\",\n                \"text\": \"Text\",\n                \"refName\": \"site_role\",\n                \"title\": \"Site/Role\",\n                \"value\": \"ekkdkr\",\n                \"requiredSelection\": false\n            }, {\n                \"formComponentType\": \"textbox\",\n                \"text\": \"Text\",\n                \"refName\": \"email\",\n                \"title\": \"E-Mail *\",\n                \"value\": \"dkekoe\",\n                \"requiredSelection\": true\n            }, {\n                \"formComponentType\": \"textbox\",\n                \"text\": \"Text\",\n                \"refName\": \"phone\",\n                \"title\": \"Phone\",\n                \"value\": \"ksoekf\",\n                \"requiredSelection\": false\n            }, {\n                \"formComponentType\": \"textbox\",\n                \"text\": \"Text\",\n                \"refName\": \"technicalReference\",\n                \"title\": \"Technical reference\",\n                \"value\": \"dkirir\",\n                \"requiredSelection\": false\n            }, {\n                \"formComponentType\": \"multichoice\",\n                \"refName\": \"interestedIn\",\n                \"title\": \"Interested in *\",\n                \"value\": [\"Electrofit Systems\", \"e-Comer\", \"I&M\", \"Other\"],\n                \"requiredSelection\": true,\n                \"options\": [{\n                        \"name\": \"CustoM 2.0\",\n                        \"value\": \"CustoM 2.0\"\n                    }, {\n                        \"name\": \"Electrofit Systems\",\n                        \"value\": \"Electrofit Systems\"\n                    }, {\n                        \"name\": \"e-Comer\",\n                        \"value\": \"e-Comer\"\n                    }, {\n                        \"name\": \"I&M\",\n                        \"value\": \"I&M\"\n                    }, {\n                        \"name\": \" Solbian\",\n                        \"value\": \" Solbian\"\n                    }, {\n                        \"name\": \"CalPower\",\n                        \"value\": \"CalPower\"\n                    }, {\n                        \"name\": \"semilimes\",\n                        \"value\": \"semilimes\"\n                    }, {\n                        \"name\": \"HBK\",\n                        \"value\": \"HBK\"\n                    }, {\n                        \"name\": \"Other\",\n                        \"value\": \"Other\"\n                    }\n                ]\n            }, {\n                \"formComponentType\": \"textbox\",\n                \"text\": \"Text\",\n                \"refName\": \"interestedInOther\",\n                \"title\": \"Other Interest\",\n                \"value\": \"dotjj4\",\n                \"requiredSelection\": false\n            }, {\n                \"formComponentType\": \"multichoice\",\n                \"refName\": \"leadType\",\n                \"title\": \"Lead Type *\",\n                \"value\": [\"Customer\", \"University\", \"Other\"],\n                \"requiredSelection\": true,\n                \"options\": [{\n                        \"name\": \"Customer\",\n                        \"value\": \"Customer\"\n                    }, {\n                        \"name\": \"Supplier\",\n                        \"value\": \"Supplier\"\n                    }, {\n                        \"name\": \"HR\",\n                        \"value\": \"HR\"\n                    }, {\n                        \"name\": \"University\",\n                        \"value\": \"University\"\n                    }, {\n                        \"name\": \"Other\",\n                        \"value\": \"Other\"\n                    }\n                ]\n            }, {\n                \"formComponentType\": \"textbox\",\n                \"text\": \"Text\",\n                \"refName\": \"leadTypeOther\",\n                \"title\": \"Other Lead Type\",\n                \"value\": \"dnorkc\",\n                \"requiredSelection\": false\n            }, {\n                \"formComponentType\": \"photopicker\",\n                \"refName\": \"businessCard\",\n                \"title\": \"Business Card\",\n                \"value\": [{\n                        \"FileType\": \"photo\",\n                        \"FileID\": \"a3ea3f4f-609a-4712-bc0b-08fb7e5a8cd8\",\n                        \"FileName\": \"1b7c2744-d493-4e39-b841-c8a0ff444dd26200755160536883324.jpg\",\n                        \"FileSize\": 2387536\n                    }, {\n                        \"FileType\": \"photo\",\n                        \"FileID\": \"d9b60c36-c6f1-4ac7-8d8c-936e77bdea56\",\n                        \"FileName\": \"885c5d86-68ca-4fa8-89b3-76edbf9c39bd7367706435385656747.jpg\",\n                        \"FileSize\": 2092386\n                    }\n                ],\n                \"requiredSelection\": false,\n                \"actionButtonTitle\": \"Select\",\n                \"multiSelection\": true\n            }, {\n                \"formComponentType\": \"photopicker\",\n                \"refName\": \"photo\",\n                \"title\": \"Photo\",\n                \"value\": [{\n                        \"FileType\": \"photo\",\n                        \"FileID\": \"9c621fdd-9a21-4a2d-8a9a-f31a01f9161f\",\n                        \"FileName\": \"f0021972-8e7b-4a90-98e7-ee3bc72b7515346351298834627125.jpg\",\n                        \"FileSize\": 4478989\n                    }\n                ],\n                \"requiredSelection\": false,\n                \"actionButtonTitle\": \"Select\",\n                \"multiSelection\": true\n            }, {\n                \"formComponentType\": \"textbox\",\n                \"text\": \"Text\",\n                \"refName\": \"shortDescription\",\n                \"title\": \"Short Description *\",\n                \"value\": \"vtgyfbuuvfihpgibiughuzugygug,guvugif, vtg6f8hih8h6de3d6gh78hhu\",\n                \"requiredSelection\": true\n            }, {\n                \"formComponentType\": \"multichoice\",\n                \"refName\": \"nextStep\",\n                \"title\": \"Next step\",\n                \"value\": [\"Follow-up email\", \"Visit @ CustoM 2.0\"],\n                \"requiredSelection\": false,\n                \"options\": [{\n                        \"name\": \"Follow-up email\",\n                        \"value\": \"Follow-up email\"\n                    }, {\n                        \"name\": \"Recall\",\n                        \"value\": \"Recall\"\n                    }, {\n                        \"name\": \"Web Meeting\",\n                        \"value\": \"Web Meeting\"\n                    }, {\n                        \"name\": \"Visit @ CustoM 2.0\",\n                        \"value\": \"Visit @ CustoM 2.0\"\n                    }, {\n                        \"name\": \"Visit @ Customer site\",\n                        \"value\": \"Visit @ Customer site\"\n                    }\n                ]\n            }\n        ]\n    },\n    \"name\": \"jzkkcm\",\n    \"surname\": \"pskxnf\",\n    \"company\": \"elepks\",\n    \"site_role\": \"ekkdkr\",\n    \"email\": \"dkekoe\",\n    \"phone\": \"ksoekf\",\n    \"technicalReference\": \"dkirir\",\n    \"interestedIn\": [\"Electrofit Systems\", \"e-Comer\", \"I&M\", \"Other\"],\n    \"interestedInOther\": \"dotjj4\",\n    \"leadType\": [\"Customer\", \"University\", \"Other\"],\n    \"leadTypeOther\": \"dnorkc\",\n    \"businessCard\": [{\n            \"FileType\": \"photo\",\n            \"FileID\": \"a3ea3f4f-609a-4712-bc0b-08fb7e5a8cd8\",\n            \"FileName\": \"1b7c2744-d493-4e39-b841-c8a0ff444dd26200755160536883324.jpg\",\n            \"FileSize\": 2387536\n        }, {\n            \"FileType\": \"photo\",\n            \"FileID\": \"d9b60c36-c6f1-4ac7-8d8c-936e77bdea56\",\n            \"FileName\": \"885c5d86-68ca-4fa8-89b3-76edbf9c39bd7367706435385656747.jpg\",\n            \"FileSize\": 2092386\n        }\n    ],\n    \"photo\": [{\n            \"FileType\": \"photo\",\n            \"FileID\": \"9c621fdd-9a21-4a2d-8a9a-f31a01f9161f\",\n            \"FileName\": \"f0021972-8e7b-4a90-98e7-ee3bc72b7515346351298834627125.jpg\",\n            \"FileSize\": 4478989\n        }\n    ],\n    \"shortDescription\": \"vtgyfbuuvfihpgibiughuzugygug,guvugif, vtg6f8hih8h6de3d6gh78hhu\",\n    \"nextStep\": [\"Follow-up email\", \"Visit @ CustoM 2.0\"]\n}\n```",
+        "x": 400,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "0473513dc9bee707",
+        "type": "inject",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 420,
+        "wires": [
+            [
+                "1ff8b4423ebc6f94"
+            ]
+        ]
+    },
+    {
+        "id": "8b01e422117ef5c9",
+        "type": "switch",
+        "z": "300f3dcabaae5254",
+        "name": "Business Pics?",
+        "property": "temp.businessCardId",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nempty"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 260,
+        "y": 740,
+        "wires": [
+            [
+                "5f2cdcecfcc34dd1"
+            ],
+            [
+                "7ec6143318c871a7"
+            ]
+        ]
+    },
+    {
+        "id": "b47d856dc6eae24d",
+        "type": "smeDownloader",
+        "z": "300f3dcabaae5254",
+        "connector": "f9adc5c8242ed986",
+        "fileId": "temp.currentBusinessCardId",
+        "fileIdType": "msg",
+        "maxWidth": 0,
+        "maxWidthType": "num",
+        "saveFilePath": "temp.currentBusinessCardPath",
+        "saveFilePathType": "msg",
+        "x": 770,
+        "y": 740,
+        "wires": [
+            [
+                "bb021cdc1d2821ed"
+            ]
+        ]
+    },
+    {
+        "id": "5f2cdcecfcc34dd1",
+        "type": "function",
+        "z": "300f3dcabaae5254",
+        "name": "Set CurrentBusinessCard",
+        "func": "msg.temp.currentBusinessCardId = msg.temp.businessCardId.shift();\nmsg.temp.currentBusinessCardPath = msg.temp.businessCardPath.shift();\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 740,
+        "wires": [
+            [
+                "b47d856dc6eae24d"
+            ]
+        ]
+    },
+    {
+        "id": "bb021cdc1d2821ed",
+        "type": "function",
+        "z": "300f3dcabaae5254",
+        "name": "Add BusinessCard to Row",
+        "func": "msg.temp.businessCardFinalRow.push(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 740,
+        "wires": [
+            [
+                "8b01e422117ef5c9"
+            ]
+        ]
+    },
+    {
+        "id": "7ec6143318c871a7",
+        "type": "function",
+        "z": "300f3dcabaae5254",
+        "name": "Stringify BusinessCardRow",
+        "func": "msg.csvRow.businessCard = msg.temp.businessCardFinalRow.toString();\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 800,
+        "wires": [
+            [
+                "22f1cd0863b39f32"
+            ]
+        ]
+    },
+    {
+        "id": "22f1cd0863b39f32",
+        "type": "switch",
+        "z": "300f3dcabaae5254",
+        "name": "Photo Pics?",
+        "property": "temp.photoId",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nempty"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 250,
+        "y": 880,
+        "wires": [
+            [
+                "3096c7196a34d5b0"
+            ],
+            [
+                "a595fe161f1c05f7"
+            ]
+        ]
+    },
+    {
+        "id": "455fb9e1c35b1614",
+        "type": "smeDownloader",
+        "z": "300f3dcabaae5254",
+        "connector": "f9adc5c8242ed986",
+        "fileId": "temp.currentPhotoId",
+        "fileIdType": "msg",
+        "maxWidth": 0,
+        "maxWidthType": "num",
+        "saveFilePath": "temp.currentPhotoPath",
+        "saveFilePathType": "msg",
+        "x": 770,
+        "y": 880,
+        "wires": [
+            [
+                "32fe3d704441d946"
+            ]
+        ]
+    },
+    {
+        "id": "3096c7196a34d5b0",
+        "type": "function",
+        "z": "300f3dcabaae5254",
+        "name": "Set CurrentPhoto",
+        "func": "msg.temp.currentPhotoId = msg.temp.photoId.shift();\nmsg.temp.currentPhotoPath = msg.temp.photoPath.shift();\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 880,
+        "wires": [
+            [
+                "455fb9e1c35b1614"
+            ]
+        ]
+    },
+    {
+        "id": "32fe3d704441d946",
+        "type": "function",
+        "z": "300f3dcabaae5254",
+        "name": "Add Photo to Row",
+        "func": "msg.temp.photoFinalRow.push(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 880,
+        "wires": [
+            [
+                "22f1cd0863b39f32"
+            ]
+        ]
+    },
+    {
+        "id": "a595fe161f1c05f7",
+        "type": "function",
+        "z": "300f3dcabaae5254",
+        "name": "Stringify PhotoRow",
+        "func": "msg.csvRow.photo = msg.temp.photoFinalRow.toString();\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 940,
+        "wires": [
+            [
+                "46166efbd1b352d2"
+            ]
+        ]
+    },
+    {
+        "id": "44e7a34dc3f508f8",
+        "type": "debug",
+        "z": "300f3dcabaae5254",
+        "name": "debug 108",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "58b68042081ee974",
+        "type": "file",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "filename": "${USERDATA}/leads/test.txt",
+        "filenameType": "env",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 1610,
+        "y": 360,
+        "wires": [
+            [
+                "68d9661fa3de6afc"
+            ]
+        ]
+    },
+    {
+        "id": "560fa3c2a49bad5a",
+        "type": "inject",
+        "z": "300f3dcabaae5254",
+        "name": "Create working folders",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "this is a test",
+        "payloadType": "str",
+        "x": 1300,
+        "y": 360,
+        "wires": [
+            [
+                "58b68042081ee974"
+            ]
+        ]
+    },
+    {
+        "id": "68d9661fa3de6afc",
+        "type": "debug",
+        "z": "300f3dcabaae5254",
+        "name": "debug 112",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1910,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "19b17c9548a801d5",
+        "type": "file in",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "filename": "${USERDATA}/leads/test.txt",
+        "filenameType": "env",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 1670,
+        "y": 500,
+        "wires": [
+            [
+                "588957cc0b62a070"
+            ]
+        ]
+    },
+    {
+        "id": "2ed7880e46b6715d",
+        "type": "inject",
+        "z": "300f3dcabaae5254",
+        "name": "Test working folders",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 1350,
+        "y": 500,
+        "wires": [
+            [
+                "19b17c9548a801d5"
+            ]
+        ]
+    },
+    {
+        "id": "588957cc0b62a070",
+        "type": "debug",
+        "z": "300f3dcabaae5254",
+        "name": "debug 113",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1950,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "405be35401947398",
+        "type": "file",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "filename": "${USERDATA}/leads/media/test.txt",
+        "filenameType": "env",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 1590,
+        "y": 400,
+        "wires": [
+            [
+                "68d9661fa3de6afc"
+            ]
+        ]
+    },
+    {
+        "id": "011e679adeadd81a",
+        "type": "inject",
+        "z": "300f3dcabaae5254",
+        "name": "Read csv",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 140,
+        "y": 1200,
+        "wires": [
+            [
+                "9f84c5af73f2381e"
+            ]
+        ]
+    },
+    {
+        "id": "9f84c5af73f2381e",
+        "type": "file in",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "filename": "${USERDATA}/leads/myDataCollection.csv",
+        "filenameType": "env",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 420,
+        "y": 1200,
+        "wires": [
+            [
+                "b220a4c81e6e47b5"
+            ]
+        ]
+    },
+    {
+        "id": "b220a4c81e6e47b5",
+        "type": "debug",
+        "z": "300f3dcabaae5254",
+        "name": "debug 114",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "3f21edf4f339e232",
+        "type": "inject",
+        "z": "300f3dcabaae5254",
+        "name": "Create working folders",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "this is a test",
+        "payloadType": "str",
+        "x": 1300,
+        "y": 400,
+        "wires": [
+            [
+                "405be35401947398"
+            ]
+        ]
+    },
+    {
+        "id": "3e5cef3bcd567871",
+        "type": "inject",
+        "z": "300f3dcabaae5254",
+        "name": "Test working folders",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 1350,
+        "y": 540,
+        "wires": [
+            [
+                "42a49c21a362bfd0"
+            ]
+        ]
+    },
+    {
+        "id": "42a49c21a362bfd0",
+        "type": "file in",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "filename": "${USERDATA}/leads/media/test.txt",
+        "filenameType": "env",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 1650,
+        "y": 540,
+        "wires": [
+            [
+                "588957cc0b62a070"
+            ]
+        ]
+    },
+    {
+        "id": "87f41037314d50e1",
+        "type": "change",
+        "z": "300f3dcabaae5254",
+        "name": "Add SubmitterId",
+        "rules": [
+            {
+                "t": "set",
+                "p": "filteredEvent.submitterId",
+                "pt": "msg",
+                "to": "_sme.receivedMsg.eventBody.dataComponent.submitterId",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 520,
+        "wires": [
+            [
+                "d57746a85ace0cc7"
+            ]
+        ]
+    },
+    {
+        "id": "faf0318168636369",
+        "type": "debug",
+        "z": "300f3dcabaae5254",
+        "name": "debug 121",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 330,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "45b1b36955baa6d8",
+        "type": "ui-table",
+        "z": "300f3dcabaae5254",
+        "group": "cfcee4d349cc2271",
+        "name": "",
+        "label": "text",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": "25",
+        "passthru": false,
+        "autocols": false,
+        "showSearch": true,
+        "selectionType": "none",
+        "columns": [
+            {
+                "title": "Id",
+                "key": "index",
+                "type": "row",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "First Name",
+                "key": "name",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Last Name",
+                "key": "surname",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Company",
+                "key": "company",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Site/Role",
+                "key": "site_role",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Email",
+                "key": "email",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Phone",
+                "key": "phone",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Tech Reference",
+                "key": "technicalReference",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Interested in",
+                "key": "interestedIn",
+                "type": "html",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Interested in (other)",
+                "key": "interestedInOther",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Lead Type",
+                "key": "leadType",
+                "type": "html",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Lead Type (other)",
+                "key": "leadTypeOther",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Business Card",
+                "key": "businessCard",
+                "type": "html",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Photo",
+                "key": "photo",
+                "type": "html",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Short Description",
+                "key": "shortDescription",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Next Step",
+                "key": "nextStep",
+                "type": "html",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Submitter",
+                "key": "submitterId",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Submission Date",
+                "key": "submitDate",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            }
+        ],
+        "x": 1750,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6ce6a3449757bdd7",
+        "type": "function",
+        "z": "300f3dcabaae5254",
+        "name": "Add Item to Array",
+        "func": "if (flow.get(\"leadsDataSet\", \"file\") === undefined) {\n    flow.set(\"leadsDataSet\", [], \"file\");\n}\nvar leadsDataSet = flow.get(\"leadsDataSet\", \"file\");\nleadsDataSet.push(msg.payload);\nflow.set(\"leadsDataSet\", leadsDataSet, \"file\");\n\nmsg.payload = leadsDataSet;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nif(flow.get(\"leadsDataSet\",\"file\") === undefined) {\n    flow.set(\"leadsDataSet\", [], \"file\");\n}",
+        "finalize": "",
+        "libs": [],
+        "x": 1450,
+        "y": 1140,
+        "wires": [
+            [
+                "45b1b36955baa6d8"
+            ]
+        ]
+    },
+    {
+        "id": "f395db07c44ce272",
+        "type": "http in",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "url": "/leads/media/:fn",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 190,
+        "y": 1320,
+        "wires": [
+            [
+                "08f4b857295a06ea"
+            ]
+        ]
+    },
+    {
+        "id": "5de7cbb4.fa21a4",
+        "type": "comment",
+        "z": "300f3dcabaae5254",
+        "name": "Create http endpoint <nodered>/files/xxx  where xxx is the file name to download",
+        "info": "",
+        "x": 360,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "08f4b857295a06ea",
+        "type": "function",
+        "z": "300f3dcabaae5254",
+        "name": "Set base path",
+        "func": "//restrict to c:\\temp\\\nvar basePath = \"/data/localfiles/leads/media/\";\nvar filename = msg.req.params.fn;\n\n\nif(filename.includes(\"..\\\\\")){\n    msg.payload = \"Illegal file path\";\n    msg.statusCode = 405;//not allowed\n    return [null, msg];//fire output 2\n} else if(filename.includes(\"../\")){\n    msg.payload = \"Illegal file path\";\n    msg.statusCode = 405;//not allowed\n    return [null, msg];//fire output 2\n} \n//TODO: add more checks\n\nmsg.filename = basePath + filename;\nreturn [msg, null];//fire output 1\n\n\n",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 1320,
+        "wires": [
+            [
+                "82514ab51ae32dc1"
+            ],
+            [
+                "2a312349cf93a068"
+            ]
+        ]
+    },
+    {
+        "id": "82514ab51ae32dc1",
+        "type": "file in",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 580,
+        "y": 1300,
+        "wires": [
+            [
+                "2a312349cf93a068"
+            ]
+        ]
+    },
+    {
+        "id": "2a312349cf93a068",
+        "type": "http response",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 710,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "f601341bf3d709f1",
+        "type": "catch",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 180,
+        "y": 1380,
+        "wires": [
+            [
+                "024e7bc21402d04b",
+                "789d8738382dfb2b"
+            ]
+        ]
+    },
+    {
+        "id": "024e7bc21402d04b",
+        "type": "function",
+        "z": "300f3dcabaae5254",
+        "name": "Set 404",
+        "func": "msg.payload = msg.error;\nmsg.statusCode = 404;//resource not found\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 560,
+        "y": 1380,
+        "wires": [
+            [
+                "2a312349cf93a068"
+            ]
+        ]
+    },
+    {
+        "id": "789d8738382dfb2b",
+        "type": "debug",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 210,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "fb74a698ef0d0f18",
+        "type": "function",
+        "z": "300f3dcabaae5254",
+        "name": "Arrange Images",
+        "func": "//BusinessCard\nif (msg.payload.businessCard.length > 0) {\n    var bcArray = msg.payload.businessCard.split(\",\");\n    var bcNew = \"\";\n    bcArray.forEach(function(item) {\n        let strippedUrl = item.replace(\"/data/localfiles\",\"\");\n        bcNew = bcNew.concat(`<a href='${strippedUrl}'><img src='${strippedUrl}' style='width: 100px; height: 100px' /></a><br/>`);\n    });\n    msg.payload.businessCard = bcNew;\n}\n\n//Photo\nif (msg.payload.photo.length > 0) {\n    var pArray = msg.payload.photo.split(\",\");\n    var pNew = \"\";\n    pArray.forEach(function (item) {\n        let strippedUrl = item.replace(\"/data/localfiles\", \"\");\n        pNew = pNew.concat(`<a href='${strippedUrl}'><img src='${strippedUrl}' style='width: 100px; height: 100px' /></a><br/>`);\n    });\n    msg.payload.photo = pNew;\n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 1140,
+        "wires": [
+            [
+                "f451ee70c06ad79b"
+            ]
+        ]
+    },
+    {
+        "id": "b88641da6648e816",
+        "type": "function",
+        "z": "300f3dcabaae5254",
+        "name": "Arrange Dates",
+        "func": "var date = new Date(msg.payload.submitDate);\nmsg.payload.submitDate = date.toLocaleString();\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 1140,
+        "wires": [
+            [
+                "9b7272c2a36e6388"
+            ]
+        ]
+    },
+    {
+        "id": "bb590bcad46fb2aa",
+        "type": "inject",
+        "z": "300f3dcabaae5254",
+        "name": "Reset Table",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[]",
+        "payloadType": "json",
+        "x": 1610,
+        "y": 1040,
+        "wires": [
+            [
+                "953e9f030d198554"
+            ]
+        ]
+    },
+    {
+        "id": "953e9f030d198554",
+        "type": "change",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "#:(file)::leadsDataSet",
+                "pt": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1630,
+        "y": 1080,
+        "wires": [
+            [
+                "45b1b36955baa6d8"
+            ]
+        ]
+    },
+    {
+        "id": "f451ee70c06ad79b",
+        "type": "function",
+        "z": "300f3dcabaae5254",
+        "name": "Arrange Lists",
+        "func": "//Interested In\nvar intArray = msg.payload.interestedIn.split(\",\");\nvar intNew = \"\";\nif (intArray.length > 0) {\n    intNew = intNew.concat(\"<ul>\");\n    intArray.forEach(function(item) {\n        intNew = intNew.concat(`<li>${item}</li>`);\n    });\n    intNew = intNew.concat(\"</ul>\");\n}\nmsg.payload.interestedIn = intNew;\n\n//Lead Type\nvar ltArray = msg.payload.leadType.split(\",\");\nvar ltNew = \"\";\nif (ltArray.length > 0) {\n    ltNew = ltNew.concat(\"<ul>\");\n    ltArray.forEach(function(item) {\n        ltNew = ltNew.concat(`<li>${item}</li>`);\n    });\n    ltNew = ltNew.concat(\"</ul>\");\n}\nmsg.payload.leadType = ltNew;\n\n//Next Step\nvar nsArray = msg.payload.nextStep.split(\",\");\nvar nsNew = \"\";\nif (nsArray.length > 0) {\n    nsNew = nsNew.concat(\"<ul>\");\n    nsArray.forEach(function(item) {\n        nsNew = nsNew.concat(`<li>${item}</li>`);\n    });\n    nsNew = nsNew.concat(\"</ul>\");\n}\nmsg.payload.nextStep = nsNew;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 1140,
+        "wires": [
+            [
+                "b88641da6648e816"
+            ]
+        ]
+    },
+    {
+        "id": "1ff8b4423ebc6f94",
+        "type": "function",
+        "z": "300f3dcabaae5254",
+        "name": "sample submission",
+        "func": "msg = {\n    \"payload\": null,\n    \"_sme\": {\n        \"receivedMsg\": {\n            \"featureType\": \"channel\",\n            \"eventType\": \"MessageReceived\",\n            \"eventBody\": {\n                \"messageId\": \"074c326d-03ae-457d-a75c-89ff8c828e75\",\n                \"senderId\": \"bb56f4a9-a241-4408-a71f-7adbc9bb31c1\",\n                \"receivedOn\": 1718207932878,\n                \"channelId\": \"9bbd111e-fb11-476d-9ac4-90dc76cf4281\",\n                \"dataComponent\": {\n                    \"dataComponentType\": \"formsubmission\",\n                    \"submitterId\": \"f9e9d4f3-380c-49dd-b2fe-8ac2ef5c9d61\",\n                    \"replyTo\": {\n                        \"messageId\": \"cf728165-d3ca-447a-aa07-754400b7c9f2\",\n                        \"refName\": \"leadsCapture\"\n                    },\n                    \"submitEnabled\": true,\n                    \"retainStatus\": false,\n                    \"submitText\": \"Submit\",\n                    \"receiver\": {\n                        \"id\": \"9bbd111e-fb11-476d-9ac4-90dc76cf4281\",\n                        \"featureType\": \"channel\"\n                    },\n                    \"formComponents\": [{\n                        \"formComponentType\": \"label\",\n                        \"refName\": \"title\",\n                        \"title\": \"Leads Capture Demo\"\n                    }, {\n                        \"formComponentType\": \"textbox\",\n                        \"text\": \"Text\",\n                        \"refName\": \"name\",\n                        \"title\": \"Name *\",\n                        \"value\": \"Davide\",\n                        \"requiredSelection\": true\n                    }, {\n                        \"formComponentType\": \"textbox\",\n                        \"text\": \"Text\",\n                        \"refName\": \"surname\",\n                        \"title\": \"Surname *\",\n                        \"value\": \"Ribezzo\",\n                        \"requiredSelection\": true\n                    }, {\n                        \"formComponentType\": \"textbox\",\n                        \"text\": \"Text\",\n                        \"refName\": \"company\",\n                        \"title\": \"Company *\",\n                        \"value\": \"semilimes\",\n                        \"requiredSelection\": true\n                    }, {\n                        \"formComponentType\": \"textbox\",\n                        \"text\": \"Text\",\n                        \"refName\": \"site_role\",\n                        \"title\": \"Site/Role\",\n                        \"value\": \"IoT Engineer\",\n                        \"requiredSelection\": false\n                    }, {\n                        \"formComponentType\": \"textbox\",\n                        \"text\": \"Text\",\n                        \"refName\": \"email\",\n                        \"title\": \"E-Mail *\",\n                        \"value\": \"davide.ribezzo@gmail.com\",\n                        \"requiredSelection\": true\n                    }, {\n                        \"formComponentType\": \"textbox\",\n                        \"text\": \"Text\",\n                        \"refName\": \"phone\",\n                        \"title\": \"Phone\",\n                        \"value\": \"+393807420195\",\n                        \"requiredSelection\": false\n                    }, {\n                        \"formComponentType\": \"textbox\",\n                        \"text\": \"Text\",\n                        \"refName\": \"technicalReference\",\n                        \"title\": \"Technical reference\",\n                        \"value\": \"Davide Ribezzo\",\n                        \"requiredSelection\": false\n                    }, {\n                        \"formComponentType\": \"multichoice\",\n                        \"refName\": \"interestedIn\",\n                        \"title\": \"Interested in *\",\n                        \"value\": [\"semilimes\", \"Solbian\"],\n                        \"requiredSelection\": true,\n                        \"options\": [{\n                            \"name\": \"CustoM 2.0\",\n                            \"value\": \"CustoM 2.0\"\n                        }, {\n                            \"name\": \"Electrofit Systems\",\n                            \"value\": \"Electrofit Systems\"\n                        }, {\n                            \"name\": \"e-Comer\",\n                            \"value\": \"e-Comer\"\n                        }, {\n                            \"name\": \"I&M\",\n                            \"value\": \"I&M\"\n                        }, {\n                            \"name\": \" Solbian\",\n                            \"value\": \" Solbian\"\n                        }, {\n                            \"name\": \"CalPower\",\n                            \"value\": \"CalPower\"\n                        }, {\n                            \"name\": \"semilimes\",\n                            \"value\": \"semilimes\"\n                        }, {\n                            \"name\": \"HBK\",\n                            \"value\": \"HBK\"\n                        }, {\n                            \"name\": \"Other\",\n                            \"value\": \"Other\"\n                        }\n                        ]\n                    }, {\n                        \"formComponentType\": \"textbox\",\n                        \"text\": \"Text\",\n                        \"refName\": \"interestedInOther\",\n                        \"title\": \"Other Interest\",\n                        \"value\": \"\",\n                        \"requiredSelection\": false\n                    }, {\n                        \"formComponentType\": \"multichoice\",\n                        \"refName\": \"leadType\",\n                        \"title\": \"Lead Type *\",\n                        \"value\": [\"Customer\", \"University\"],\n                        \"requiredSelection\": true,\n                        \"options\": [{\n                            \"name\": \"Customer\",\n                            \"value\": \"Customer\"\n                        }, {\n                            \"name\": \"Supplier\",\n                            \"value\": \"Supplier\"\n                        }, {\n                            \"name\": \"HR\",\n                            \"value\": \"HR\"\n                        }, {\n                            \"name\": \"University\",\n                            \"value\": \"University\"\n                        }, {\n                            \"name\": \"Other\",\n                            \"value\": \"Other\"\n                        }\n                        ]\n                    }, {\n                        \"formComponentType\": \"textbox\",\n                        \"text\": \"Text\",\n                        \"refName\": \"leadTypeOther\",\n                        \"title\": \"Other Lead Type\",\n                        \"value\": \"\",\n                        \"requiredSelection\": false\n                    }, {\n                        \"formComponentType\": \"photopicker\",\n                        \"refName\": \"businessCard\",\n                        \"title\": \"Business Card\",\n                        \"value\": [{\n                            \"FileType\": \"photo\",\n                            \"FileID\": \"5ab914b5-d12f-472e-864e-4ea16a0c48c1\",\n                            \"FileName\": \"72437581-2c03-4e1e-8b8a-042ebab3417d5673035245678006824.jpg\",\n                            \"FileSize\": 2209470\n                        }, {\n                            \"FileType\": \"photo\",\n                            \"FileID\": \"1d2dd93b-df7e-43c8-b34c-695dfc0c505f\",\n                            \"FileName\": \"21a6a038-dca4-45dc-bb8c-73f43a4116748677524456899555610.jpg\",\n                            \"FileSize\": 2274415\n                        }\n                        ],\n                        \"requiredSelection\": false,\n                        \"actionButtonTitle\": \"Select\",\n                        \"multiSelection\": true\n                    }, {\n                        \"formComponentType\": \"photopicker\",\n                        \"refName\": \"photo\",\n                        \"title\": \"Photo\",\n                        \"value\": [{\n                            \"FileType\": \"photo\",\n                            \"FileID\": \"11804721-06b5-4a69-adef-de358d0fcf54\",\n                            \"FileName\": \"f4119a69-beef-4829-9f19-38b8f721e6a9919602532322145861.jpg\",\n                            \"FileSize\": 4711507\n                        }\n                        ],\n                        \"requiredSelection\": false,\n                        \"actionButtonTitle\": \"Select\",\n                        \"multiSelection\": true\n                    }, {\n                        \"formComponentType\": \"textbox\",\n                        \"text\": \"Text\",\n                        \"refName\": \"shortDescription\",\n                        \"title\": \"Short Description *\",\n                        \"value\": \"This is a test description\",\n                        \"requiredSelection\": true\n                    }, {\n                        \"formComponentType\": \"multichoice\",\n                        \"refName\": \"nextStep\",\n                        \"title\": \"Next step\",\n                        \"value\": [\"Follow-up email\", \"Visit @ Customer site\"],\n                        \"requiredSelection\": false,\n                        \"options\": [{\n                            \"name\": \"Follow-up email\",\n                            \"value\": \"Follow-up email\"\n                        }, {\n                            \"name\": \"Recall\",\n                            \"value\": \"Recall\"\n                        }, {\n                            \"name\": \"Web Meeting\",\n                            \"value\": \"Web Meeting\"\n                        }, {\n                            \"name\": \"Visit @ CustoM 2.0\",\n                            \"value\": \"Visit @ CustoM 2.0\"\n                        }, {\n                            \"name\": \"Visit @ Customer site\",\n                            \"value\": \"Visit @ Customer site\"\n                        }\n                        ]\n                    }\n                    ]\n                }\n            }\n        }\n    },\n    \"_msgid\": \"c9c78e184d8fa25b\",\n    \"filteredEvent\": {\n        \"senderId\": \"bb56f4a9-a241-4408-a71f-7adbc9bb31c1\",\n        \"replyTo\": {\n            \"messageId\": \"cf728165-d3ca-447a-aa07-754400b7c9f2\",\n            \"refName\": \"leadsCapture\"\n        },\n        \"formComponents\": [{\n            \"formComponentType\": \"label\",\n            \"refName\": \"title\",\n            \"title\": \"Leads Capture Demo\"\n        }, {\n            \"formComponentType\": \"textbox\",\n            \"text\": \"Text\",\n            \"refName\": \"name\",\n            \"title\": \"Name *\",\n            \"value\": \"Davide\",\n            \"requiredSelection\": true\n        }, {\n            \"formComponentType\": \"textbox\",\n            \"text\": \"Text\",\n            \"refName\": \"surname\",\n            \"title\": \"Surname *\",\n            \"value\": \"Ribezzo\",\n            \"requiredSelection\": true\n        }, {\n            \"formComponentType\": \"textbox\",\n            \"text\": \"Text\",\n            \"refName\": \"company\",\n            \"title\": \"Company *\",\n            \"value\": \"semilimes\",\n            \"requiredSelection\": true\n        }, {\n            \"formComponentType\": \"textbox\",\n            \"text\": \"Text\",\n            \"refName\": \"site_role\",\n            \"title\": \"Site/Role\",\n            \"value\": \"IoT Engineer\",\n            \"requiredSelection\": false\n        }, {\n            \"formComponentType\": \"textbox\",\n            \"text\": \"Text\",\n            \"refName\": \"email\",\n            \"title\": \"E-Mail *\",\n            \"value\": \"davide.ribezzo@gmail.com\",\n            \"requiredSelection\": true\n        }, {\n            \"formComponentType\": \"textbox\",\n            \"text\": \"Text\",\n            \"refName\": \"phone\",\n            \"title\": \"Phone\",\n            \"value\": \"+393807420195\",\n            \"requiredSelection\": false\n        }, {\n            \"formComponentType\": \"textbox\",\n            \"text\": \"Text\",\n            \"refName\": \"technicalReference\",\n            \"title\": \"Technical reference\",\n            \"value\": \"\",\n            \"requiredSelection\": false\n        }, {\n            \"formComponentType\": \"multichoice\",\n            \"refName\": \"interestedIn\",\n            \"title\": \"Interested in *\",\n            \"value\": [\"semilimes\"],\n            \"requiredSelection\": true,\n            \"options\": [{\n                \"name\": \"CustoM 2.0\",\n                \"value\": \"CustoM 2.0\"\n            }, {\n                \"name\": \"Electrofit Systems\",\n                \"value\": \"Electrofit Systems\"\n            }, {\n                \"name\": \"e-Comer\",\n                \"value\": \"e-Comer\"\n            }, {\n                \"name\": \"I&M\",\n                \"value\": \"I&M\"\n            }, {\n                \"name\": \" Solbian\",\n                \"value\": \" Solbian\"\n            }, {\n                \"name\": \"CalPower\",\n                \"value\": \"CalPower\"\n            }, {\n                \"name\": \"semilimes\",\n                \"value\": \"semilimes\"\n            }, {\n                \"name\": \"HBK\",\n                \"value\": \"HBK\"\n            }, {\n                \"name\": \"Other\",\n                \"value\": \"Other\"\n            }\n            ]\n        }, {\n            \"formComponentType\": \"textbox\",\n            \"text\": \"Text\",\n            \"refName\": \"interestedInOther\",\n            \"title\": \"Other Interest\",\n            \"value\": \"\",\n            \"requiredSelection\": false\n        }, {\n            \"formComponentType\": \"multichoice\",\n            \"refName\": \"leadType\",\n            \"title\": \"Lead Type *\",\n            \"value\": [\"Customer\"],\n            \"requiredSelection\": true,\n            \"options\": [{\n                \"name\": \"Customer\",\n                \"value\": \"Customer\"\n            }, {\n                \"name\": \"Supplier\",\n                \"value\": \"Supplier\"\n            }, {\n                \"name\": \"HR\",\n                \"value\": \"HR\"\n            }, {\n                \"name\": \"University\",\n                \"value\": \"University\"\n            }, {\n                \"name\": \"Other\",\n                \"value\": \"Other\"\n            }\n            ]\n        }, {\n            \"formComponentType\": \"textbox\",\n            \"text\": \"Text\",\n            \"refName\": \"leadTypeOther\",\n            \"title\": \"Other Lead Type\",\n            \"value\": \"\",\n            \"requiredSelection\": false\n        }, {\n            \"formComponentType\": \"photopicker\",\n            \"refName\": \"businessCard\",\n            \"title\": \"Business Card\",\n            \"value\": [{\n                \"FileType\": \"photo\",\n                \"FileID\": \"5ab914b5-d12f-472e-864e-4ea16a0c48c1\",\n                \"FileName\": \"72437581-2c03-4e1e-8b8a-042ebab3417d5673035245678006824.jpg\",\n                \"FileSize\": 2209470\n            }, {\n                \"FileType\": \"photo\",\n                \"FileID\": \"1d2dd93b-df7e-43c8-b34c-695dfc0c505f\",\n                \"FileName\": \"21a6a038-dca4-45dc-bb8c-73f43a4116748677524456899555610.jpg\",\n                \"FileSize\": 2274415\n            }\n            ],\n            \"requiredSelection\": false,\n            \"actionButtonTitle\": \"Select\",\n            \"multiSelection\": true\n        }, {\n            \"formComponentType\": \"photopicker\",\n            \"refName\": \"photo\",\n            \"title\": \"Photo\",\n            \"value\": [{\n                \"FileType\": \"photo\",\n                \"FileID\": \"11804721-06b5-4a69-adef-de358d0fcf54\",\n                \"FileName\": \"f4119a69-beef-4829-9f19-38b8f721e6a9919602532322145861.jpg\",\n                \"FileSize\": 4711507\n            }\n            ],\n            \"requiredSelection\": false,\n            \"actionButtonTitle\": \"Select\",\n            \"multiSelection\": true\n        }, {\n            \"formComponentType\": \"textbox\",\n            \"text\": \"Text\",\n            \"refName\": \"shortDescription\",\n            \"title\": \"Short Description *\",\n            \"value\": \"This is a test description\",\n            \"requiredSelection\": true\n        }, {\n            \"formComponentType\": \"multichoice\",\n            \"refName\": \"nextStep\",\n            \"title\": \"Next step\",\n            \"value\": [\"Follow-up email\"],\n            \"requiredSelection\": false,\n            \"options\": [{\n                \"name\": \"Follow-up email\",\n                \"value\": \"Follow-up email\"\n            }, {\n                \"name\": \"Recall\",\n                \"value\": \"Recall\"\n            }, {\n                \"name\": \"Web Meeting\",\n                \"value\": \"Web Meeting\"\n            }, {\n                \"name\": \"Visit @ CustoM 2.0\",\n                \"value\": \"Visit @ CustoM 2.0\"\n            }, {\n                \"name\": \"Visit @ Customer site\",\n                \"value\": \"Visit @ Customer site\"\n            }\n            ]\n        }\n        ]\n    },\n    \"name\": \"Davide\",\n    \"surname\": \"Ribezzo\",\n    \"company\": \"semilimes\",\n    \"site_role\": \"IoT Engineer\",\n    \"email\": \"davide.ribezzo@gmail.com\",\n    \"phone\": \"+393807420195\",\n    \"technicalReference\": \"\",\n    \"interestedIn\": [\"semilimes\"],\n    \"interestedInOther\": \"\",\n    \"leadType\": [\"Customer\"],\n    \"leadTypeOther\": \"\",\n    \"businessCard\": [{\n        \"FileType\": \"photo\",\n        \"FileID\": \"5ab914b5-d12f-472e-864e-4ea16a0c48c1\",\n        \"FileName\": \"72437581-2c03-4e1e-8b8a-042ebab3417d5673035245678006824.jpg\",\n        \"FileSize\": 2209470\n    }, {\n        \"FileType\": \"photo\",\n        \"FileID\": \"1d2dd93b-df7e-43c8-b34c-695dfc0c505f\",\n        \"FileName\": \"21a6a038-dca4-45dc-bb8c-73f43a4116748677524456899555610.jpg\",\n        \"FileSize\": 2274415\n    }\n    ],\n    \"photo\": [{\n        \"FileType\": \"photo\",\n        \"FileID\": \"11804721-06b5-4a69-adef-de358d0fcf54\",\n        \"FileName\": \"f4119a69-beef-4829-9f19-38b8f721e6a9919602532322145861.jpg\",\n        \"FileSize\": 4711507\n    }\n    ],\n    \"shortDescription\": \"This is a test description\",\n    \"nextStep\": [\"Follow-up email\"]\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 420,
+        "wires": [
+            [
+                "b674d50b2792a25e"
+            ]
+        ]
+    },
+    {
+        "id": "9b7272c2a36e6388",
+        "type": "function",
+        "z": "300f3dcabaae5254",
+        "name": "Arrange Submitter name",
+        "func": "var contacts = flow.get(\"contacts\",\"file\"); \nvar contact = contacts.find(x => x.accountId === msg.payload.submitterId);\nif (contact === undefined) {\n    msg.payload.submitterId = `[Not a contact] ${msg.payload.submitterId}`;\n} else {\n    msg.payload.submitterId = `[${contact.accountName}] ${msg.payload.submitterId}`;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1210,
+        "y": 1140,
+        "wires": [
+            [
+                "6ce6a3449757bdd7"
+            ]
+        ]
+    },
+    {
+        "id": "cec49c1949fb0d5b",
+        "type": "smeSender",
+        "z": "300f3dcabaae5254",
+        "connector": "f9adc5c8242ed986",
+        "async": "0",
+        "name": "",
+        "actionName": "account_contacts",
+        "actionText": "Account - Get Contacts",
+        "recipientId": "",
+        "recipientIdType": "str",
+        "messageId": "",
+        "messageIdType": "str",
+        "limit": 0,
+        "limitType": "num",
+        "recipientIds": "",
+        "recipientIdsType": "str",
+        "groupChatId": "",
+        "groupChatIdType": "str",
+        "channelId": "",
+        "channelIdType": "str",
+        "title": "",
+        "titleType": "str",
+        "saveLocation": "savedEntityId",
+        "saveLocationType": "flow",
+        "saveRequestIdLocation": "savedRequestId",
+        "saveRequestIdLocationType": "flow",
+        "logToConsole": false,
+        "x": 390,
+        "y": 40,
+        "wires": [
+            [
+                "bd90597bfd9e5b45"
+            ]
+        ]
+    },
+    {
+        "id": "bd90597bfd9e5b45",
+        "type": "function",
+        "z": "300f3dcabaae5254",
+        "name": "Save Contacts to file",
+        "func": "var myContacts = msg._sme.responseMsgs[0].data;\nflow.set(\"contacts\", myContacts, \"file\");\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a48fde972a395d4d",
+        "type": "inject",
+        "z": "300f3dcabaae5254",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "300",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 20,
+        "wires": [
+            [
+                "cec49c1949fb0d5b"
+            ]
+        ]
+    },
+    {
+        "id": "f9adc5c8242ed986",
+        "type": "sme-main-connector",
+        "name": "SMECON",
+        "apiKeyType": "env"
+    },
+    {
+        "id": "cfcee4d349cc2271",
+        "type": "ui-group",
+        "name": "Leads",
+        "page": "c7666ad3685a05be",
+        "width": "12",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "c7666ad3685a05be",
+        "type": "ui-page",
+        "name": "Leads Capture",
+        "ui": "fcbb1149ea4d3fdd",
+        "path": "/leads",
+        "icon": "account-tie-voice",
+        "layout": "grid",
+        "theme": "242431ff40afb6f8",
+        "order": 1,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "fcbb1149ea4d3fdd",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "navigationStyle": "default",
+        "titleBarStyle": "hidden"
+    },
+    {
+        "id": "242431ff40afb6f8",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094ce",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    }
+]
