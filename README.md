@@ -112,6 +112,10 @@ In your NodeRED editor, select "Manage Palette" in the menu, and install the fol
 - Download the [Leads Capture Flow](https://github.com/semilimes/leads-collection/blob/main/node-red/leads_capture_flow.json) file
 - Create a new flow in your NodeRED editor
 - Choose Import from the menu, and select the file you downloaded
+- In the right panel, select the wheel icon to select the connector nodes. Double click on "SMECON" semilimes connector and verify that the API KEY selected is set to `SME_API_KEY` or whatever you configured in Step 3 as an environment variable. If the field is empty, make sure you fill it before proceeding.
+
+![SmeConnector Config](./images/smeConnectorConfig.jpg)
+
 - Click Deploy
 
 You should now have your recipe ready for startup!
