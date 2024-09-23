@@ -80,6 +80,24 @@ In the configuration section you will find out how to setup semilimes to access 
 
 ![Leads Dashboard Image](./images/leadsDashboard.jpg)
 
+## 👁‍🗨 Try it out!
+
+We have already implemented a demo version to let you have a first look about how the process works.
+
+In this case, you will be a team member accessing a leads form to fill during an event.
+
+| Link | QR Code |
+| --- | --- |
+| [Leads Capture Demo](https://cloud.semilimes.net/CloudServer/qr/25202f03-993b-44ea-b4b3-4494af37bae9/0b508c3f-e69e-4ba6-aeb7-ad32597cd20d) | ![Demo QrCode Image](./images/demo-qrcode.jpg) |
+
+
+Don't forget to explore *all demos* we have prepared for you!
+
+| Link | QR Code |
+| --- | --- |
+| [All Demos](https://cloud.semilimes.net/CloudServer/qr/3857e37c-1cb8-462f-9ec8-0abdf63f23a3/6de7b9b0-6884-4b9f-984c-ce0ab92b0d9f) | ![NRDemos Image](./images/NRDemos-qrcode.jpg) |
+
+
 ## ⚙️ Configuration instructions
 
 ### Cloud-based solution
