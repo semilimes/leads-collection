@@ -88,14 +88,14 @@ In this case, you will be a team member accessing a leads form to fill during an
 
 > Scan the QR Code below with your semilimes app to get direct access to the demo.
 
-| QR Code |
+| Leads Capture Demo |
 | --- |
 | ![Demo QrCode Image](./images/demo-qrcode.jpg) |
 
 
 Don't forget to explore *all demos* we have prepared for you!
 
-| QR Code |
+| All Demos |
 | --- |
 | ![NRDemos Image](./images/NRDemos-qrcode.jpg) |
 
