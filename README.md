@@ -86,16 +86,18 @@ We have already implemented a demo version to let you have a first look about ho
 
 In this case, you will be a team member accessing a leads form to fill during an event.
 
-| Link | QR Code |
-| --- | --- |
-| [Leads Capture Demo](https://cloud.semilimes.net/CloudServer/qr/25202f03-993b-44ea-b4b3-4494af37bae9/0b508c3f-e69e-4ba6-aeb7-ad32597cd20d) | ![Demo QrCode Image](./images/demo-qrcode.jpg) |
+> Scan the QR Code below with your semilimes app to get direct access to the demo.
+
+| QR Code |
+| --- |
+| ![Demo QrCode Image](./images/demo-qrcode.jpg) |
 
 
 Don't forget to explore *all demos* we have prepared for you!
 
-| Link | QR Code |
-| --- | --- |
-| [All Demos](https://cloud.semilimes.net/CloudServer/qr/3857e37c-1cb8-462f-9ec8-0abdf63f23a3/6de7b9b0-6884-4b9f-984c-ce0ab92b0d9f) | ![NRDemos Image](./images/NRDemos-qrcode.jpg) |
+| QR Code |
+| --- |
+| ![NRDemos Image](./images/NRDemos-qrcode.jpg) |
 
 
 ## ⚙️ Configuration instructions
@@ -162,3 +164,9 @@ In your NodeRED editor, select the dashboard on the right side panel (expand it 
 ## 🛠️ Troubleshooting 
 
 ...
+
+## Changelog
+
+### v1.0.0
+
+Initial Release
