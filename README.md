@@ -111,7 +111,7 @@ Don't forget to explore *all demos* we have prepared for you!
 - Setup API payment methods
 - Enter the NodeRED section
 - Select the instance type
-- Select the NodeRED stack (**Note:** this recipe is tested with NodeRED 3.1.9)
+- Select the NodeRED stack (**Note:** this recipe is tested with NodeRED 3.1.9 and 4.0.0)
 - Open your freshly created NodeRED editor in the cloud
 
 **Step 2: Verify Environment Variables**
